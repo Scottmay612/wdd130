@@ -1,7 +1,13 @@
 body {
     text-align: center;
 }
+img {
+    width: 80%;
+}
 nav {
     background-color: steelblue;
     padding: 10px;
+}
+p {
+    width: 80%;
 }
