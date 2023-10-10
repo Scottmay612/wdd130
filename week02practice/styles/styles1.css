@@ -1,31 +1,10 @@
-header {
-    text-align: center;
-    font-size: 2em;
-}
-header:hover {
-    background-color: white;
-    color: steelblue;
-}
-header p {
-    font-size: 0.5em
-}
-body {
+nav {
     background-color: pink;
 }
-.center-aligned {
-    color: aquamarine;
-    text-align: center;
-    list-style-position: inside;
+header {
+    font-size: large;
 }
-main {
-    text-align: left;
-    color: black;
-}
-img {
-    width: 30%;
-    display: block;
-    margin: 0 auto;
-}
-footer {
+p {
+    background-color: aqua;
     text-align: center;
 }
