@@ -188,7 +188,26 @@ footer .social img {
     opacity: .6;
     transform: scale(1.1);
 }
-
+/*Start of blog page.*/
+ #blog-msg { 
+    color: #023047;
+    text-align: center;
+    background-color: pink;
+    grid-column: 1/3;
+}
+.blog-grid {
+    display: grid;
+    grid-template-columns: (1fr 1fr 1fr); 
+    grid-template-rows: (1fr 1fr 1fr);
+}
+.highlights {
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+.wild-encounters {
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
