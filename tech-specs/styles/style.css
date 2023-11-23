@@ -1,0 +1,102 @@
+#content {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+nav a {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  padding: 35px;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+header {
+  background-color: #386e95;
+  font-family: 'Satisfy', 'Roboto', sans-serif;
+  display: grid;
+  grid-template-columns: 150px auto;
+}
+body {
+  background-color: white;
+  font-family: 'Roboto', arial, sans-serif;
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+}
+.logo {
+  width: 80px
+}
+#logo_link {
+  padding-top: 5px;
+  justify-self: center;
+  align-self: center;
+}
+#hero {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  margin-top: -100px;
+}
+#hero-box {
+  grid-column: 1/4;
+  grid-row: 1/3;
+  z-index: -1;
+}
+#hero-img {
+  width: 100%;
+  height: 20%;
+}
+#hero-msg {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-top: 100px;
+}
+.home-title {
+  color: #023047;
+  font-family: 'Satisfy', 'Roboto', sans-serif;
+  font-size: 2em;
+  margin-top: 10px;
+}
+#welcome-msg h1 {
+  text-align: center;
+}
+#welcome-msg p {
+  /* text-align: center; */
+  margin: 5px 50px 5px 50px;
+}
+h2 {
+  margin-left: 50px;
+  display: inline;
+  margin-top: 20px;
+  width: 100%;
+  border: 5px solid black;
+  padding-top: 5px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+}
+p {
+  margin: 20px 50px 5px 50px;
+}
+#make-it-easy {
+  margin: 40px 0px 40px 0px;
+}
+.pictures {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  max-width: 100%;
+  max-height: auto;
+}
+.apple-picture {
+  grid-column: 1/2;
+  height: 100%;
+  justify-items:end;
+  margin: 30px;
+}
+.google-picture {
+  grid-column: 2/3;
+  height: auto;
+  /* width: 40px; */
+}
