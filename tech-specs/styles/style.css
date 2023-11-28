@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Oswald&display=swap');
+
 #content {
   max-width: 1600px;
   margin: 0 auto;
-  /* height: 100%; */
 }
 nav a {
   text-align: center;
@@ -26,7 +27,7 @@ body {
   font-size: 18px;
   margin: 0;
   padding: 0;
-  font-family: 'Lato', Helvetica, sans-serif;
+  font-family: 'Lato', 'Helvetica', 'sans-serif';
 }
 .logo {
   width: 80px;
@@ -45,10 +46,12 @@ body {
   grid-column: 1/4;
   grid-row: 1/3;
   z-index: -1;
+  margin-bottom: 40px;
 }
 #hero-img {
   width: 100%;
   height: 20%;
+  /* border: 5px solid black; */
 }
 #hero-img img {
   width: 100%;
@@ -59,15 +62,19 @@ body {
   grid-row: 1/2;
   margin-top: 100px;
 }
-#phone-info {
+.phone-info, .home-info {
+  margin: 0 auto;
+  width: 80%;
+}
+.phone-info {
   margin: 0 auto;
   width: 80%;
 }
 #welcome-msg h1 {
-  font-family: 'Oswald','Lato',sans-serif;
+  font-family: 'Oswald','Lato', 'sans-serif';
   font-size: 40pt;
 }
-h2 {
+.home-info h1, .home-info h2 {
   display: inline;
   width: 100%;
   background-color: #f5ede8;
@@ -82,7 +89,7 @@ h2 {
 p {
   text-align: left;
   margin-bottom: 50px;
-  font-family: 'Lato', Helvetica, sans-serif;
+  font-family: 'Lato', 'Helvetica', 'sans-serif';
   font-size: 20pt;
   line-height: 1.2em;
 }
@@ -94,7 +101,7 @@ p {
 }
 .apple-picture, 
 .google-picture {
-  height: 300px; /* Set the desired height */
+  height: 300px; 
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -102,7 +109,7 @@ p {
 .google-picture img {
   width: 110%;
   height: 110%;
-  object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+  object-fit: cover; 
 } 
 .google-picture {
   margin-left: 10px;
@@ -130,4 +137,39 @@ footer p a:hover {
   padding: 25px 50px;
   font-size: 12pt;
   align-items: center;
+}
+.phone-specs {
+  margin: 0 auto;
+  /* width: 80%; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.phone-specs section {
+  margin: 40px;
+  border: 10px solid black;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 10px;
+
+}
+.phone-specs h3 {
+  text-decoration: underline;
+}
+.phone-info h2{
+  width: 100%;
+  margin-bottom: 0px;
+  background-color: #f5ede8;
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  font-family: 'Oswald','Lato','sans-serif';
+  font-size: 30pt;
+  text-align: center;
+}
+form {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
