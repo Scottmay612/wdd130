@@ -1,14 +1,53 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All about me</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+</style>
 </head>
 <body>
+
     <h1>About me</h1>
-    <img alt="Image of me" src="images/ProfilePicturesmall.jpg">
     <h2>Scott May</h2>
     <p>Hello! My name is Scott May. I am currently studying to become a
         computer engineer through BYU Idaho. For fun, I love anything 
@@ -16,7 +55,7 @@
         sports. While I am going to school, I am working as an ASL Interpreter 
         in an elementary school. I learned sign language while serving my 
         mission in Mesa, Arizona. <p>
-        
+            
         </p>My favorite scripture is Alma 37:6-7. It
         says, "6 Now ye may suppose that this is foolishness in me; but 
         behold I say unto you, that by small and simple things are great 
@@ -25,7 +64,15 @@
         about his great and eternal purposes; and by very small means the 
         Lord doth confound the wise and bringeth about the salvation of 
         many souls."
-    <p>
-    <p>I am excited to work with all of you!</p>
+        <p>
+            <p>I am excited to work with all of you!</p>
+            
+            <div class="container">
+                <img src="images/ProfilePicturesmall.jpg" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+    <div class="text">Scott May</div>
+  </div>
+</div>
+  
 </body>
 </html>
