@@ -22,6 +22,9 @@ header {
   display: grid;
   grid-template-columns: 150px auto;
 }
+#contact-us-header {
+  margin-bottom: 50px;
+}
 body {
   background-color: white;
   font-size: 18px;
@@ -126,21 +129,23 @@ footer p {
 footer p a:hover {
   text-decoration: underline;
 }
-.home-footer .social {
+footer .social {
   display: flex;
   justify-content: center;
   line-height: 10%;
 }
-.home-footer {
+footer {
   background-color: black;
   color: white;
   padding: 25px 50px;
   font-size: 12pt;
   align-items: center;
 }
+.contact-us-footer {
+  margin-top: 120px;
+}
 .phone-specs {
   margin: 0 auto;
-  /* width: 80%; */
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -168,8 +173,4 @@ footer p a:hover {
   font-family: 'Oswald','Lato','sans-serif';
   font-size: 30pt;
   text-align: center;
-}
-form {
-  margin-top: 50px;
-  margin-bottom: 50px;
 }
