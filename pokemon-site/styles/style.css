@@ -1,0 +1,76 @@
+/* Basic Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+/* Headings */
+h1 {
+    font-size: 40pt;
+    text-align: center;
+    color: #333; 
+} 
+h2 {
+    font-size: 30pt;
+    margin-top: -20px;
+}
+
+/* Input boxes */
+input[type="text"] {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px; 
+    font-size: 15pt;
+}
+
+/* Button style */
+button {
+    background-color: #b11313; 
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: #8a0f0f; /* Darker red */
+} 
+
+#finalResults {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 20pt;
+    margin-top: 30px;
+}
+#finalResults h2 {
+    font-size: 30pt;
+}
+
+#results1 {
+    grid-column: 1/2;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+#results2 {
+    grid-column: 2/3;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+#searchHistory {
+    grid-template-columns: 3/4;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+
+
